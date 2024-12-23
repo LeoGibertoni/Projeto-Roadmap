@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.fuzzy-bubbles-regular {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.fuzzy-bubbles-bold {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Funnel+Display:wght@300..800&family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.fonte{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+.fontep{
+    font-family: Fuzzy Bubbles,Comic Sans MS, Comic Sans, cursive, sans-serif;
+    font-size: 25px;
+}
+
+
+body{
+    background-color: white;
+    align-items: center;
+    width: 790px;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 30px;
+}
+.tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 17px;
+}
+.topo{
+    margin: 10px;
+    height: 20px;
+    padding-right: 5px;
+}
+.topo a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover{
+    color: #ccaf8b;
+    text-decoration: underline;
+}
+
+header{
+    padding-left: 5px;
+    text-align: left;
+}
+header a{
+    text-decoration: none;
+    color: rgba(97, 97, 97, 0.39);
+    font-size: 14px;
+}
+header a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.perguntas{
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    width: 410px;
+    height: auto;
+    margin: 5px auto;
+    border: 2px solid rgba(161, 161, 161, 0.452);
+    border-radius: 15px;
+    padding: 10px;
+}
+#pergunta{
+    background-color: rgba(182, 182, 182, 0.158);
+    width: auto;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    font-family: "Bebas Neue", serif;
+    font-size: 24px;
+}
+#perguntas p{
+    font-size: 20px;
+    color: black;
+}
+#interaction{
+    background-color: rgba(182, 182, 182, 0.158);
+    width: auto;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.button{
+    width: 60px;
+    background-color: rgba(100, 100, 100, 0);
+    border: 0px solid rgba(100, 100, 100, 0.158);
+}
+.button:active{
+    color: white;
+    background-color: rgb(100, 100, 100);;
+}
+
+button{
+    width: 60px;
+    background-color: rgba(100, 100, 100, 0);
+    border: 0px solid rgba(100, 100, 100, 0.158);
+}
+button:active{
+    color: white;
+    background-color: rgba(100, 100, 100, 0.596);
+}
+button:hover{
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.flashcard{
+    text-indent: 23%;
+    font-weight: 800;
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.containerporcentagem1{    
+    display: flex;
+    align-items: center;
+    width: 410px;
+    height: 28px;
+    border: 2px solid rgba(161, 161, 161, 0.452);
+    border-radius: 15px;
+    margin: auto;
+}
+
+#porcento1{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    background-color: rgba(161, 161, 161, 0.452);
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.containerporcentagem2{    
+    display: flex;
+    align-items: center;
+    width: 425px;
+    height: 25px;
+    border: 2px solid rgba(161, 161, 161, 0.452);
+    border-radius: 15px;
+    margin: auto;
+}
+
+#porcento2{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    background-color: rgba(161, 161, 161, 0.466);
+    border-radius: 15px;
+    margin: 5px;
+}
+
+#mostrar{
+    width: 150px;
+}
+
+#btn{
+    width: 150px;
+}
+
+footer{
+    margin-top: 30px;
+    
+}

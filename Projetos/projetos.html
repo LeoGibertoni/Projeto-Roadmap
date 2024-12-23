@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="tags">
+            <p class="topo" style="font-size: 14px;">Leonardo Gibertoni</p>
+            <p class="topo" style="font-size: 14px;">
+                <a href="../index.html">Principal</a>&nbsp;|&nbsp;
+                <a href="projetos.html" style="color: rgb(172, 172, 172)">Projetos</a>&nbsp;|&nbsp;
+                <a href="../Artigo/artigo.html">Artigos</a>&nbsp;|&nbsp;
+                <a href="../Contato/contato.html">Contatos</a>&nbsp;|&nbsp;
+                <a href="../Changelog/index.html">Changelog</a>
+            </p>
+        </nav>
+    </header>
+    <menu>
+        <div class="menu-container">
+            <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+            <div class="menu">
+                <ul>
+                    <li><a href="proj/flashcard/flashcard.html">Flash Card</a></li>
+                    <li><a href="proj/agecalculator/agecalculator.html">Age Calculator</a></li>
+                    <li><a href="proj/tasktracker/tasktracker.html">Task Tracker</a></li>
+                </ul>
+            </div>
+        </div>
+    </menu>
+    <main>
+        <br>
+        <p style="text-align: center;">Projeto JavaScript, Html5 e Css</p>
+        <div>
+            <button onclick="toggle('conteudo')" class="butom">Click-me</button>
+        </div>
+        <div id="conteudo">
+            <img src="proj/IMG/1_ahpxPO0jLGb9EWrY2qQPhg.png" alt="JavaScript">
+        </div>
+    </main>
+    <footer>
+        <p>Created by leonardo gibertoni inspired by Developer Roadmaps</p>
+    </footer>
+    <script src="menu.js"></script>
+</body>
+</html>

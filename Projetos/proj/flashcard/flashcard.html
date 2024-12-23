@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCard</title>
+    <link rel="stylesheet" href="flashcardcss.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="pergunta.js" defer></script>
+    <script src="menu.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="tags">
+            <p class="topo" style="font-size: 14px;">Leonardo Gibertoni</p>
+            <p class="topo" style="font-size: 14px;">
+                <a href="../../../index.html">Principal</a>&nbsp;|&nbsp;
+                <a href="../../projetos.html" style="color: rgb(172, 172, 172)">Projetos</a>&nbsp;|&nbsp;
+                <a href="../../../Artigo/artigo.html">Artigos</a>&nbsp;|&nbsp;
+                <a href="../../../Contato/contato.html">Contatos</a>&nbsp;|&nbsp;
+                <a href="../../../Changelog/index.html">Changelog</a>
+            </p>
+        </nav>
+    </header>
+    <menu>
+        <div class="menu-container">
+            <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+            <div class="menu">
+                <ul>
+                    <li><a href="flashcard.html">Flash Card</a></li>
+                    <li><a href="../agecalculator/agecalculator.html">Age Calculator</a></li>
+                    <li><a href="../tasktracker/tasktracker.html">Task Tracker</a></li>
+                </ul>
+            </div>
+        </div>
+    </menu>
+    <main>
+        <p class="flashcard">Flash Cards</p>
+        <div class="containerporcentagem1">
+            <div id="porcento1"></div>
+            <div id="etapa1"></div>
+            <div id="etapa2" style="position: absolute; right: 740px;"></div>
+        </div>
+        <!-- Perguntas -->
+        <div class="perguntas">
+            <div id="flashcard">
+                <p id="pergunta"></p>
+            </div>
+            <div id="interaction">
+                <button id="voltar" onclick="porcentagemm">Voltar</button>
+                <button id="btn">Mostrar resposta</button>
+                <button id="avancar" onclick="porcentagemm">Avançar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p style="margin: 0px;">Created by Leonardo Gibertoni inspired by Developer Roadmaps</p>
+    </footer>
+</body>
+</html>
+
