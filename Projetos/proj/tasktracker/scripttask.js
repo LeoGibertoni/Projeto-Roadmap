@@ -19,30 +19,28 @@ function addTask() {
 
 function toggleTask(checkbox) {
     const span = checkbox.nextElementSibling; 
-    const li = checkbox.parentElement;  // A referência para o <li> da tarefa
+    const li = checkbox.parentElement;  
 
     if (checkbox.checked) {
-        span.style.cssText = "text-decoration: line-through; color: gray";  // Estilo para tarefa concluída
-        li.classList.add("completed");  // Adiciona uma classe para marcar como concluída
-        moveToEnd(li);  // Move a tarefa para o final da lista
+        span.style.cssText = "text-decoration: line-through; color: gray"; 
+        li.classList.add("completed"); 
+        moveToEnd(li);  
     } else {
-        span.style.cssText = "color: black";  // Restaura a cor normal quando desmarcada
-        li.classList.remove("completed");  // Remove a classe de concluída
-        moveToTop(li);  // Move a tarefa de volta para o topo
+        span.style.cssText = "color: black";  
+        li.classList.remove("completed"); 
+        moveToTop(li); 
     }
 }
 
-// Função para mover o item para o final da lista
 function moveToEnd(li) {
-    taskList.appendChild(li);  // Move o <li> para o final da lista
+    taskList.appendChild(li);  
 }
 
-// Função para mover o item de volta para o topo da lista
 function moveToTop(li) {
-    taskList.insertBefore(li, taskList.firstChild);  // Move o <li> para o topo da lista
+    taskList.insertBefore(li, taskList.firstChild); 
 }
 
 function deleteTask(button) {
     const li = button.parentElement;
-    taskList.removeChild(li);  // Remove o item da lista
+    taskList.removeChild(li); 
 }

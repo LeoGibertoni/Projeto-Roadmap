@@ -1,78 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+menu {
+    margin: 0px;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 60px; 
+    height: 90%; 
+    background-color: #fdfdfd;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+    padding-left: 0px;
+    border-radius: 0px 10px 10px 0px;
+    border: black solid 2px;
+    z-index: 1000; 
+}
+
+hr{
+    margin: 0px;
 }
 .menu-container {
-    position: relative;
-    text-align: center;
-}
-.menu-container button{
-    height: 40px;
-}
-.menu-btn {
-    background-color: #333;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-}
-.menu-btn:hover{
-    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding-left: 10px; 
 }
 
-.menu {
-    display: none;
-    background-color: #333;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin: 0px auto;
-    border-radius: 5px;
-    margin-top: 3px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.menu ul {
-    list-style: none;
-    padding: 10px 0;
-    margin-top: 10px;
-}
-
-.menu ul li a {
-    color: white;
+.menucont a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: rgb(5, 5, 5);
     text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    width: 100%;
+    justify-content: flex-start; 
 }
 
-.menu ul li a:hover {
-    background-color: #444;
+.menucont a:hover {
+    background-color: #575757;
 }
 
-.menu.active {
-    display: block;
-    animation: slideDown 0.3s ease-in-out;
+.menucont img {
+    width: 30px;  
+    height: 30px;
+    margin-right: 10px; 
 }
 
-@keyframes slideDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.menucont span {
+    display: none; 
 }
 
-.menu a{
+.menu-expanded .menucont span {
+    display: inline; 
+}
+
+.menu-expanded {
+    width: 180px; 
+}
+
+.containerimg {
+    display: inline-block;
+    max-width: 20px;
+    max-height: 20px;
     width: auto;
+    height: auto;
 }
