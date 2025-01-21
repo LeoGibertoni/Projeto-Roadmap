@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashCard</title>
-    <link rel="stylesheet" href="flashcardcss.css">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
-    <script src="pergunta.js" defer></script>
     <script src="menu.js"></script>
+    <script src="temp.js"></script>
 </head>
 <body>
     <menu>
@@ -25,7 +25,7 @@
                     <img src="../../img/age.png" alt="agecalcimg" class="containerimg"> <span>Age Calculator</span>
                 </a>
                 <hr>
-                <a href="flashcard.html">
+                <a href="../flashcard/flashcard.html">
                     <img src="../../img/flashcard.png" alt="flashcardicon" class="containerimg"> <span>Flash Card</span>
                 </a>
                 <hr>
@@ -45,7 +45,6 @@
     </menu>
     <header>
         <nav class="tags">
-            <p class="topo" style="font-size: 14px;">Leonardo Gibertoni</p>
             <p class="topo" style="font-size: 14px;">
                 <a href="../../../index.html">Principal</a>&nbsp;|&nbsp;
                 <a href="../../projetos.html" style="color: rgb(172, 172, 172)">Projetos</a>&nbsp;|&nbsp;
@@ -56,27 +55,32 @@
         </nav>
     </header>
     <main>
-        <p class="flashcard">Flash Cards</p>
-        <div class="containerporcentagem1">
-            <div id="porcento1"></div>
-            <div id="etapa1"></div>
-            <div id="etapa2" style="position: absolute; right: 740px;"></div>
-        </div>
-        <!-- Perguntas -->
-        <div class="perguntas">
-            <div id="flashcard">
-                <p id="pergunta"></p>
-            </div>
-            <div id="interaction">
-                <button id="voltar" onclick="porcentagemm">Voltar</button>
-                <button id="btn">Mostrar resposta</button>
-                <button id="avancar" onclick="porcentagemm">Avançar</button>
-            </div>
-        </div>
+        <h1>Temperature Converter</h1>
+        <p class="paragrafo">Coloque o numero e converta</p>
+        <div class="container">
+            <textarea id="numericTextarea" class="caixatextomensagemtemp" oninput="validateInput(event)" placeholder="0.00"></textarea>
+<div class="opcao1">
+    <button class="escolha1" onclick="toggleDropdown(1)">Da Temperatura</button>
+    <div class="content" id="dropdown1">
+        <p onclick="selectUnit('Fahrenheit', 1)">Fahrenheit</p>
+        <p onclick="selectUnit('Celsius', 1)">Celsius</p>
+        <p onclick="selectUnit('Kelvin', 1)">Kelvin</p>
+    </div>
+</div>
+
+<!-- Botão e dropdown para unidade de destino (opcao2) -->
+<div class="opcao2">
+    <button class="escolha2" onclick="toggleDropdown(2)">Para temperatura</button>
+    <div class="content2" id="dropdown2">
+        <p onclick="selectUnit('Fahrenheit', 2)">Fahrenheit</p>
+        <p onclick="selectUnit('Celsius', 2)">Celsius</p>
+        <p onclick="selectUnit('Kelvin', 2)">Kelvin</p>
+    </div>
+</div>
+            
+            <button onclick="convertTemperature()">Converter</button>
+        </div>     
+        <p id="conversionResult" class="resultado"></p>
     </main>
-    <footer>
-        <p style="margin: 0px;">Created by Leonardo Gibertoni inspired by Developer Roadmaps</p>
-    </footer>
 </body>
 </html>
-
