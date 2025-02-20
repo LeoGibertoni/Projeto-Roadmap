@@ -142,6 +142,8 @@ header{
 .proj{
     text-align: justify;
     font-weight: 600;
+    margin: 0px;
+    padding: 8px 0px 8px 0px;
 }
 .quadradofinal{   
     display: flex;
